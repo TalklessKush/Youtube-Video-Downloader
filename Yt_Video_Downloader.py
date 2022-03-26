@@ -5,7 +5,7 @@ from pytube import YouTube
 
 
 def save_video():
-    YouTube("https://youtu.be/0IAr0HhOVZo").streams.first().download(path.get())
+    YouTube(str(yt_link).streams.first().download(path.get())
     secwin = Tk()
     downloaded = Label(secwin, text = "Successfully Downloaded Video!")
     downloaded.pack()
